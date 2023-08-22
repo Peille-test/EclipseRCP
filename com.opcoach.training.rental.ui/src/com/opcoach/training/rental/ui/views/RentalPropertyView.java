@@ -38,6 +38,7 @@ import com.opcoach.training.rental.ui.Messages;
 import com.opcoach.training.rental.ui.RentalUIActivator;
 import com.opcoach.training.rental.ui.RentalUIConstants;
 
+@Deprecated
 public class RentalPropertyView extends ViewPart implements ISelectionListener
 {
 	private DataBindingContext m_bindingContext;

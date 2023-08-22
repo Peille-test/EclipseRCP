@@ -4,6 +4,8 @@ import org.eclipse.ui.IFolderLayout;
 import org.eclipse.ui.IPageLayout;
 import org.eclipse.ui.IPerspectiveFactory;
 
+import com.opcoach.training.rental.ui.views.e4.E4RentalPropertyView;
+
 public class RentalPerspective implements IPerspectiveFactory
 {
 
@@ -24,7 +26,7 @@ public class RentalPerspective implements IPerspectiveFactory
 		// Bottom left: Outline view and Property Sheet view
 		IFolderLayout bottomLeft = layout.createFolder("bottomLeft", IPageLayout.BOTTOM, 0.50f, "topLeft");
 		bottomLeft.addView(CustomerViewPart.ID);
-		layout.addView(RentalPropertyView.VIEW_ID, IPageLayout.LEFT, 0.5f, "bottomLeft");
+		layout.addView(E4RentalPropertyView.VIEW_ID, IPageLayout.LEFT, 0.5f, "bottomLeft");
 
 	}
 }

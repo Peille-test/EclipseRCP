@@ -29,15 +29,6 @@
             id="com.opcoach.rental.ui">
       </category>
       <view
-            name="Rental Property view"
-            icon="icons/Rentals.png"
-            category="com.opcoach.rental.ui"
-            class="com.opcoach.training.rental.ui.views.RentalPropertyView"
-            id="com.opcoach.rental.ui.views.rentalView">
-         <description>
-         </description>
-      </view>
-      <view
             category="com.opcoach.rental.ui"
             class="com.opcoach.training.rental.ui.views.RentalAgencyView"
             icon="icons/Agency.png"

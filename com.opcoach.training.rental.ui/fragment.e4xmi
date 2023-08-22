@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_S7KFYED1Ee6DvaRbOMEMWw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_erVu4ED1Ee6DvaRbOMEMWw" featurename="descriptors" parentElementId="xpath:/">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_s3oOcED1Ee6DvaRbOMEMWw" elementId="com.opcoach.rental.ui.views.rentalView.e4" label="E4 Rental Property" iconURI="platform:/plugin/com.opcoach.training.rental.ui/icons/Rentals.png" category="Rental" contributionURI="bundleclass://com.opcoach.training.rental.ui/com.opcoach.training.rental.ui.views.e4.E4RentalPropertyView">
+      <tags>View</tags>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

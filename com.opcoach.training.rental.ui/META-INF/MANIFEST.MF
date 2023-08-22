@@ -5,20 +5,21 @@ Bundle-SymbolicName: com.opcoach.training.rental.ui;singleton:=true
 Bundle-Version: 1.0.1.qualifier
 Bundle-Activator: com.opcoach.training.rental.ui.RentalUIActivator
 Bundle-Vendor: OPCoach
+Export-Package: com.opcoach.training.rental.ui,
+ com.opcoach.training.rental.ui.pref,
+ com.opcoach.training.rental.ui.views
 Require-Bundle: com.opcoach.training.rental.core;visibility:=reexport,
  org.eclipse.core.runtime,
  org.eclipse.emf.databinding,
  org.eclipse.core.databinding.beans,
  org.eclipse.core.databinding.property,
  org.eclipse.ui.workbench;resolution:=optional,
- org.eclipse.rap.ui.workbench;resolution:=optional,
- org.eclipse.jface.databinding
-Bundle-ActivationPolicy: lazy
-Export-Package: com.opcoach.training.rental.ui,
- com.opcoach.training.rental.ui.pref,
- com.opcoach.training.rental.ui.views
+ org.eclipse.jface.databinding,
+ org.eclipse.e4.ui.di,
+ org.eclipse.e4.ui.model.workbench;bundle-version="2.4.0.v20230404-0801"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Import-Package: org.eclipse.core.commands,
+Import-Package: javax.annotation;version="1.3.5",
+ org.eclipse.core.commands,
  org.eclipse.jface.action,
  org.eclipse.jface.databinding.swt,
  org.eclipse.jface.preference,
@@ -34,3 +35,4 @@ Import-Package: org.eclipse.core.commands,
  org.eclipse.ui.forms.widgets,
  org.eclipse.ui.handlers,
  org.eclipse.ui.plugin
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.opcoach.training.rental.ui.Palette">
+      <palette
+            id="com.opcoach.training.rental.ui.colorprovider.vive"
+            name="Couleurs Vives"
+            paletteClass="com.opcoach.training.rental.ui.palettes.ViveColorProvider">
+      </palette>
+   </extension>
+   <extension
+         point="com.opcoach.training.rental.ui.Palette">
+      <palette
+            id="com.opcoach.training.rental.ui.colorprovider.pastel"
+            name="Pastel"
+            paletteClass="com.opcoach.training.rental.ui.palettes.PastelColorProvider">
+      </palette>
+   </extension>
+
+</plugin>

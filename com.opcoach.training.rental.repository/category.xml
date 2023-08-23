@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="com.opcoach.training.rental.feature">
+      <category name="com.opcoach.rental"/>
+   </feature>
+   <category-def name="com.opcoach.rental" label="Rental"/>
+</site>

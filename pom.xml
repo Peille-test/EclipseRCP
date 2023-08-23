@@ -91,6 +91,7 @@
 		<module>com.opcoach.training.rental.ui</module>
 		<module>com.opcoach.training.rental.ui.colorprovider</module>
 		<module>com.opcoach.training.rental.ui.commands</module>
+		<module>com.opcoach.training.rental.repository</module>
 
 		<!--<module>com.opcoach.training.e4.rental.feature</module>
 		<module>com.opcoach.training.e4.rental.ui</module>

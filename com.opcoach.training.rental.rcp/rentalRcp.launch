@@ -12,7 +12,6 @@
     <stringAttribute key="configLocation" value="${workspace_loc}/.metadata/.plugins/org.eclipse.pde.core/rentalRcp"/>
     <booleanAttribute key="default" value="false"/>
     <setAttribute key="deselected_workspace_bundles">
-        <setEntry value="com.opcoach.training.rental.adapters"/>
         <setEntry value="com.opcoach.training.rental.ui.colorprovider"/>
         <setEntry value="com.sii.sample"/>
     </setAttribute>
@@ -43,13 +42,14 @@
         <setEntry value="org.apache.batik.css@default:default"/>
         <setEntry value="org.apache.batik.i18n@default:default"/>
         <setEntry value="org.apache.batik.util@default:default"/>
-        <setEntry value="org.apache.commons.io@default:default"/>
+        <setEntry value="org.apache.commons.commons-io@default:default"/>
         <setEntry value="org.apache.commons.jxpath@default:default"/>
         <setEntry value="org.apache.commons.logging@default:default"/>
         <setEntry value="org.apache.felix.gogo.command@default:default"/>
         <setEntry value="org.apache.felix.gogo.runtime@default:default"/>
         <setEntry value="org.apache.felix.gogo.shell@default:default"/>
         <setEntry value="org.apache.felix.scr@1:true"/>
+        <setEntry value="org.apache.log4j@default:default"/>
         <setEntry value="org.apache.xmlgraphics@default:default"/>
         <setEntry value="org.eclipse.ant.core@default:default"/>
         <setEntry value="org.eclipse.core.commands@default:default"/>
@@ -99,7 +99,11 @@
         <setEntry value="org.eclipse.equinox.common@2:true"/>
         <setEntry value="org.eclipse.equinox.event@default:default"/>
         <setEntry value="org.eclipse.equinox.preferences@default:default"/>
+        <setEntry value="org.eclipse.equinox.region@default:default"/>
         <setEntry value="org.eclipse.equinox.registry@default:default"/>
+        <setEntry value="org.eclipse.equinox.transforms.hook@default:default"/>
+        <setEntry value="org.eclipse.equinox.weaving.hook@default:default"/>
+        <setEntry value="org.eclipse.fx.osgi@default:default"/>
         <setEntry value="org.eclipse.help@default:default"/>
         <setEntry value="org.eclipse.jface.databinding@default:default"/>
         <setEntry value="org.eclipse.jface@default:default"/>
@@ -111,6 +115,7 @@
         <setEntry value="org.eclipse.ui.workbench@default:default"/>
         <setEntry value="org.eclipse.ui@default:default"/>
         <setEntry value="org.eclipse.urischeme@default:default"/>
+        <setEntry value="org.eclipse.xtext.logging@default:default"/>
         <setEntry value="org.osgi.service.cm@default:default"/>
         <setEntry value="org.osgi.service.component@default:default"/>
         <setEntry value="org.osgi.service.event@default:default"/>
@@ -124,6 +129,7 @@
         <setEntry value="org.w3c.dom.svg@default:default"/>
     </setAttribute>
     <setAttribute key="selected_workspace_bundles">
+        <setEntry value="com.opcoach.training.rental.adapters@default:true"/>
         <setEntry value="com.opcoach.training.rental.core@default:default"/>
         <setEntry value="com.opcoach.training.rental.rcp@default:default"/>
         <setEntry value="com.opcoach.training.rental.ui.commands@default:false"/>

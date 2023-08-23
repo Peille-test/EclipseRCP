@@ -98,11 +98,11 @@
         <setEntry value="org.eclipse.equinox.common@2:true"/>
         <setEntry value="org.eclipse.equinox.event@default:default"/>
         <setEntry value="org.eclipse.equinox.preferences@default:default"/>
-        <setEntry value="org.eclipse.equinox.region@default:default"/>
+        <setEntry value="org.eclipse.equinox.region@default:false"/>
         <setEntry value="org.eclipse.equinox.registry@default:default"/>
-        <setEntry value="org.eclipse.equinox.transforms.hook@default:default"/>
-        <setEntry value="org.eclipse.equinox.weaving.hook@default:default"/>
-        <setEntry value="org.eclipse.fx.osgi@default:default"/>
+        <setEntry value="org.eclipse.equinox.transforms.hook@default:false"/>
+        <setEntry value="org.eclipse.equinox.weaving.hook@default:false"/>
+        <setEntry value="org.eclipse.fx.osgi@default:false"/>
         <setEntry value="org.eclipse.help@default:default"/>
         <setEntry value="org.eclipse.jface.databinding@default:default"/>
         <setEntry value="org.eclipse.jface@default:default"/>
@@ -114,7 +114,7 @@
         <setEntry value="org.eclipse.ui.workbench@default:default"/>
         <setEntry value="org.eclipse.ui@default:default"/>
         <setEntry value="org.eclipse.urischeme@default:default"/>
-        <setEntry value="org.eclipse.xtext.logging@default:default"/>
+        <setEntry value="org.eclipse.xtext.logging@default:false"/>
         <setEntry value="org.osgi.service.cm@default:default"/>
         <setEntry value="org.osgi.service.component@default:default"/>
         <setEntry value="org.osgi.service.event@default:default"/>

@@ -76,6 +76,7 @@
 					</toolchains>
 				</configuration>
 			</plugin>-->
+			
 
 		</plugins>
 	</build>
@@ -83,6 +84,13 @@
 	<!-- the modules that should be built together -->
 	<modules>
 		<module>com.opcoach.training.rental.tp</module>
+		<module>com.opcoach.training.rental.core</module>
+		<module>com.opcoach.training.rental.adapters</module>
+		<module>com.opcoach.training.rental.feature</module>
+		<module>com.opcoach.training.rental.rcp</module>
+		<module>com.opcoach.training.rental.ui</module>
+		<module>com.opcoach.training.rental.ui.colorprovider</module>
+		<module>com.opcoach.training.rental.ui.commands</module>
 
 		<!--<module>com.opcoach.training.e4.rental.feature</module>
 		<module>com.opcoach.training.e4.rental.ui</module>

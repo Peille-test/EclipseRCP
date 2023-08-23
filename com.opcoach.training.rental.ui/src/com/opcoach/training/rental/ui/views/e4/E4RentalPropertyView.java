@@ -198,23 +198,19 @@ public class E4RentalPropertyView
 	
 	@Inject
 	@Optional
-	public void reacteOnSelect(@Named(IServiceConstants.ACTIVE_SELECTION) Object objectSelected) {
+	public void reacteOnSelect(@Named(IServiceConstants.ACTIVE_SELECTION) IStructuredSelection objectSelected) {
 		if (objectSelected == null) return;
 		
 		System.out.println("Object selection recu: " + objectSelected.getClass());
 		
-				
-		if (objectSelected instanceof IStructuredSelection)
-		{
-			Object sel = ((IStructuredSelection) objectSelected).getFirstElement();
-			
-			if (sel == null) return;
+		Object sel = ((IStructuredSelection) objectSelected).getFirstElement();
+		
+		if (sel == null) return;
 
-			// La selection courante est elle un Rental ou adaptable en Rental ?
-			Rental r = (Rental) Platform.getAdapterManager().getAdapter(sel, Rental.class);
-			setRental(r);
+		// La selection courante est elle un Rental ou adaptable en Rental ?
+		Rental r = (Rental) Platform.getAdapterManager().getAdapter(sel, Rental.class);
+		setRental(r);
 
-		}
 	}
 	
 	protected DataBindingContext initDataBindings() {

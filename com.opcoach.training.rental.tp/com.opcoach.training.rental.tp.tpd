@@ -1,0 +1,44 @@
+target "Training RCP 4" with source requirements
+
+// Update release to 2022-09
+location "http://download.eclipse.org/releases/2023-06" {
+	org.eclipse.platform.feature.group
+	org.eclipse.e4.rcp.feature.group
+	org.eclipse.emf.databinding.feature.group
+	org.eclipse.equinox.executable.feature.group
+	org.eclipse.pde.feature.group
+	
+	// Used for tests
+	org.eclipse.pde.junit.runtime
+	
+    // Add the junit 5 support	
+   	org.eclipse.jdt.junit5.runtime
+	junit-jupiter-api
+   	junit-jupiter-engine
+   	junit-jupiter-migrationsupport
+   	junit-jupiter-params
+   	junit-platform-commons
+   	
+   	javax.annotation
+		
+}
+
+
+// Add delta pack
+location "http://download.eclipse.org/eclipse/updates/4.28" {
+	org.eclipse.equinox.sdk.feature.group
+}
+
+// Add the new E4 test platform from opcoach website
+//location "https://dl.bintray.com/opcoach/E4Tester/" {
+location "https://www.opcoach.com/repository/2023-06" {
+   com.opcoach.e4tester.feature.feature.group
+   com.opcoach.e4.preferences.feature.feature.group
+} 
+
+location "https://download.eclipse.org/efxclipse/updates-nightly/site/" {
+	org.eclipse.fx.ide.feature.feature.group
+	org.eclipse.fx.ide.css.feature.feature.group
+	org.eclipse.fx.ide.fxml.feature.feature.group
+	org.eclipse.fx.runtime.min.feature.feature.group
+}

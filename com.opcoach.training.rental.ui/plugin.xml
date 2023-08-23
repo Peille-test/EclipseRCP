@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin>
    <extension-point id="Palette" name="Palette" schema="schema/Palette.exsd"/>
+   <extension-point id="Device" name="Device" schema="schema/Device.exsd"/>
 
    <extension
          point="org.eclipse.ui.preferencePages">
@@ -221,6 +222,33 @@
             uri="fragment.e4xmi"
             apply="always">
       </fragment>
+   </extension>
+   <extension
+         point="com.opcoach.training.rental.ui.Device">
+      <Device
+            Id="com.opcoach.training.rental.ui.Device1"
+            autonome="false"
+            driver="com.opcoach.rental.ui.DefaultDriver"
+            icon="icons/expandall.gif"
+            marque="Philipps"
+            type="Glucometre">
+      </Device>
+       <Device
+            Id="com.opcoach.training.rental.ui.Device2"
+            autonome="false"
+            driver="com.opcoach.rental.ui.DefaultDriver"
+            icon="icons/expandall.gif"
+            marque="Philipps"
+            type="Glucometre">
+      </Device>
+       <Device
+            Id="com.opcoach.training.rental.ui.Device3"
+            autonome="false"
+            driver="com.opcoach.rental.ui.DefaultDriver"
+            icon="icons/expandall.gif"
+            marque="Philipps"
+            type="Glucometre">
+      </Device>
    </extension>
 
 </plugin>

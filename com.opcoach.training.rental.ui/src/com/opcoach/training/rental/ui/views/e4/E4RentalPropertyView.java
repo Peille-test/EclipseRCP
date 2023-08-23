@@ -202,6 +202,19 @@ public class E4RentalPropertyView
 		if (objectSelected == null) return;
 		
 		System.out.println("Object selection recu: " + objectSelected.getClass());
+		
+				
+		if (objectSelected instanceof IStructuredSelection)
+		{
+			Object sel = ((IStructuredSelection) objectSelected).getFirstElement();
+			
+			if (sel == null) return;
+
+			// La selection courante est elle un Rental ou adaptable en Rental ?
+			Rental r = (Rental) Platform.getAdapterManager().getAdapter(sel, Rental.class);
+			setRental(r);
+
+		}
 	}
 	
 	protected DataBindingContext initDataBindings() {

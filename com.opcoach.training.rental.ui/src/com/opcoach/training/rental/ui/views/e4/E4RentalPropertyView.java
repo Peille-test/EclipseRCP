@@ -2,6 +2,8 @@ package com.opcoach.training.rental.ui.views.e4;
 
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 import org.eclipse.core.databinding.DataBindingContext;
 import org.eclipse.core.databinding.UpdateValueStrategy;
@@ -9,7 +11,9 @@ import org.eclipse.core.databinding.beans.typed.PojoProperties;
 import org.eclipse.core.databinding.observable.value.IObservableValue;
 import org.eclipse.core.internal.databinding.conversion.DateToStringConverter;
 import org.eclipse.core.runtime.Platform;
+import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.di.Focus;
+import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.emf.databinding.EMFObservables;
 import org.eclipse.emf.databinding.EMFProperties;
 import org.eclipse.emf.databinding.FeaturePath;
@@ -33,7 +37,6 @@ import org.eclipse.ui.IWorkbenchPart;
 import com.opcoach.training.rental.Rental;
 import com.opcoach.training.rental.RentalAgency;
 import com.opcoach.training.rental.RentalPackage.Literals;
-import com.opcoach.training.rental.core.RentalCoreActivator;
 import com.opcoach.training.rental.ui.Messages;
 import com.opcoach.training.rental.ui.RentalUIActivator;
 import com.opcoach.training.rental.ui.RentalUIConstants;
@@ -192,6 +195,15 @@ public class E4RentalPropertyView
 		}
 
 	}
+	
+	@Inject
+	@Optional
+	public void reacteOnSelect(@Named(IServiceConstants.ACTIVE_SELECTION) Object objectSelected) {
+		if (objectSelected == null) return;
+		
+		System.out.println("Object selection recu: " + objectSelected.getClass());
+	}
+	
 	protected DataBindingContext initDataBindings() {
 		DataBindingContext bindingContext = new DataBindingContext();
 		//
